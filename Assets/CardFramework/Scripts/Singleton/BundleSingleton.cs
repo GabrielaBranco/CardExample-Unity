@@ -38,7 +38,6 @@ public class BundleSingleton : Singleton<BundleSingleton>
 		AssetBundle assetBundle = GetBundle(name);
 		if (assetBundle == null)
 		{
-			assetBundle = new AssetBundle();
 			assetBundle = AssetBundle.LoadFromFile(path);
 			assetBundle.name = name;
 			AssetBundleList.Add(assetBundle);
